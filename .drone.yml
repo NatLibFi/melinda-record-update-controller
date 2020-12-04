@@ -9,7 +9,6 @@ trigger:
     - tag
 
 steps:
-
   - name: audit
     image: node:12
     commands:
@@ -78,11 +77,11 @@ steps:
 ---
 kind: secret
 name: docker_username
-data: 
+data: -
 ---
 kind: secret
 name: docker_password
-data: 
+data: -
 ---
 kind: secret
 name: ssh_key
