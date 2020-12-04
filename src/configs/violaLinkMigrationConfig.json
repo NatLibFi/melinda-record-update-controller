@@ -1,0 +1,236 @@
+{
+  "sourceHarvesting": {
+    "sourceRecordHarvestConfig": "baseOaiPmhAutNamesSourceRecordHarvestConfig",
+    "sourceRecordValidationConfig": "sruJobValidationConfig",
+    "sourceRecordValidationFilters": [
+      {
+        "fieldsPresent": [
+          "^100$"
+        ],
+        "subfieldExclusion": [
+          {
+            "tag": "^100$",
+            "subfields": [
+              {
+                "code": "t"
+              }
+            ]
+          }
+        ],
+        "fieldStructure": [
+          {
+            "tag": "^040$",
+            "subfields": {
+              "a": {
+                "required": true,
+                "pattern": "^(?:FI-NLD)$"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "fieldsPresent": [
+          "^100$"
+        ],
+        "subfieldExclusion": [
+          {
+            "tag": "^100$",
+            "subfields": [
+              {
+                "code": "t"
+              }
+            ]
+          }
+        ],
+        "fieldStructure": [
+          {
+            "tag": "^040$",
+            "subfields": {
+              "d": {
+                "required": true,
+                "pattern": "^(?:FI-NLD)$"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "linkDataHarvesting": {
+    "linkDataHarvesterConfig": [
+      "baseSruAutHarvesterConfig"
+    ],
+    "linkDataHarvesterApiProfileId": "foo",
+    "linkDataHarvesterValidationFilters": [
+      {
+        "matchSubfields": {
+          "collect": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "q"
+          ],
+          "from": {
+            "tag": "100",
+            "value": "collect"
+          },
+          "to": {
+            "tag": "^(100|600|700)$",
+            "value": "collect"
+          }
+        },
+        "fieldsPresent": [
+          "^(100|600|700)$",
+          "^042$"
+        ],
+        "fieldStructure": [
+          {
+            "tag": "^042$",
+            "subfields": {
+              "a": {
+                "pattern": "^(?:finbd)"
+              }
+            }
+          }
+        ],
+        "changes": [
+          {
+            "from": {
+              "tag": "001",
+              "value": "value"
+            },
+            "to": {
+              "tag": "^(100|600|700)$",
+              "value": {
+                "code": "0"
+              },
+              "format": "(FI-ASTERI-N)%s",
+              "where": {
+                "collect": [
+                  "a",
+                  "b",
+                  "c",
+                  "d",
+                  "q"
+                ],
+                "from": {
+                  "tag": "100",
+                  "value": "collect"
+                },
+                "to": {
+                  "tag": "^(100|600|700)$",
+                  "value": "collect"
+                }
+              }
+            },
+            "order": [
+              "a",
+              "c",
+              "q",
+              "d",
+              "e",
+              {
+                "code": "0",
+                "value": "^\\(FI-ASTERI-N\\)"
+              },
+              "0"
+            ]
+          },
+          {
+            "removesubfields": {
+              "tag": "^(100|600|700)$",
+              "code": "0",
+              "value": "^\\d+$"
+            }
+          }
+        ]
+      },
+      {
+        "matchSubfields": {
+          "collect": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "q"
+          ],
+          "from": {
+            "tag": "100",
+            "value": "collect"
+          },
+          "to": {
+            "tag": "^(100|600|700)$",
+            "value": "collect"
+          }
+        },
+        "fieldsPresent": [
+          "^(100|600|700)$",
+          "^035$"
+        ],
+        "fieldStructure": [
+          {
+            "tag": "^035$",
+            "subfields": {
+              "a": {
+                "pattern": "^\\(FI-VIOLA\\)\\d+"
+              }
+            }
+          }
+        ],
+        "changes": [
+          {
+            "from": {
+              "tag": "001",
+              "value": "value"
+            },
+            "to": {
+              "tag": "^(100|600|700)$",
+              "value": {
+                "code": "0"
+              },
+              "format": "(FI-ASTERI-N)%s",
+              "where": {
+                "collect": [
+                  "a",
+                  "b",
+                  "c",
+                  "d",
+                  "q"
+                ],
+                "from": {
+                  "tag": "100",
+                  "value": "collect"
+                },
+                "to": {
+                  "tag": "^(100|600|700)$",
+                  "value": "collect"
+                }
+              }
+            },
+            "order": [
+              "a",
+              "c",
+              "q",
+              "d",
+              "e",
+              {
+                "code": "0",
+                "value": "^\\(FI-ASTERI-N\\)"
+              },
+              "0"
+            ]
+          },
+          {
+            "removesubfields": {
+              "tag": "^(100|600|700)$",
+              "code": "0",
+              "value": "^\\d+$"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

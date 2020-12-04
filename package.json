@@ -1,0 +1,82 @@
+{
+    "name": "@natlibfi/melinda-record-update-controller",
+    "version": "0.0.1",
+    "description": "Job generator and queuing controller",
+    "author": {
+        "name": "The National Library of Finland"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:NatLibFi//melinda-record-update-controller.git"
+    },
+    "homepage": "https://github.com/NatLibFi/melinda-record-update-controller",
+    "bugs": {
+        "url": "https://github.com/NatLibFi/melinda-record-update-controller/issues"
+    },
+    "license": "AGPL-3.0+",
+    "engines": {
+        "node": ">=12"
+    },
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node ./dist/index",
+        "start:dev": "babel-node ./src/index",
+        "lint": "eslint src",
+        "lint:dev": "eslint --fix src",
+        "check-deps": "npm-check;exit 0",
+        "test": "npm run lint",
+        "dev": "NODE_ENV=development cross-env LOG_LEVEL=debug nodemon",
+        "build": "babel src --source-maps --copy-files --delete-dir-on-start --out-dir=dist --minified",
+        "prod": "NODE_ENV=production npm run build && npm run start"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.12.5",
+        "@natlibfi/marc-record-serializers": "^7.2.1",
+        "@natlibfi/marc-record-validate": "^6.0.1",
+        "@natlibfi/marc-record-validators-melinda": "^8.2.5",
+        "@natlibfi/melinda-commons": "^11.1.1",
+        "@natlibfi/melinda-backend-commons": "^2.0.2",
+        "@natlibfi/melinda-record-link-migration-commons": "git+https://github.com/NatLibFi/melinda-record-link-migration-commons.git#melkehitys-1117",
+        "@natlibfi/oai-pmh-client": "^2.0.5",
+        "amqplib": ">=0.6.0 < 1.0.0",
+        "esm": "^3.2.25",
+        "moment": "^2.29.1",
+        "mongodb": "^3.6.3",
+        "node-fetch": "^2.6.1",
+        "uuid": "^8.3.1",
+        "xml2js": ">=0.4.23 < 1.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.8",
+        "@babel/core": "^7.12.9",
+        "@babel/node": "^7.12.6",
+        "@babel/preset-env": "^7.12.7",
+        "babel-eslint": "^10.1.0",
+        "cross-env": "^7.0.3",
+        "eslint": "^7.14.0",
+        "@natlibfi/eslint-config-melinda-backend": "1.0.6",
+        "eslint-plugin-import": "^2.22.1",
+        "nodemon": "^2.0.6"
+    },
+    "eslintConfig": {
+        "extends": "@natlibfi/melinda-backend"
+    },
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "targets": "maintained node versions"
+                }
+            ]
+        ]
+    },
+    "nodemonConfig": {
+        "exec": "npm run lint:dev && npm run start:dev || (sleep 10; touch src/app.js)",
+        "watch": [
+            "src/*"
+        ],
+        "ext": "js",
+        "delay": 2.5
+    }
+}

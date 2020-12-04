@@ -1,0 +1,24 @@
+CAT   L $$aLOAD-VIOAU$$b00$$c20190913$$lFIN11$$h1619
+CAT   L $$aFENNI-FIX$$b30$$c20191116$$lFIN11$$h1542
+CAT   L $$aFENNI-FIX$$b30$$c20200607$$lFIN11$$h2120
+DB    L FIN11
+SYSID L 202432
+FMT   L AU
+LDR   L ^^^^^cz^^a2200193n^^4500
+001   L 000202432
+005   L 20200607212053.0
+008   L 941113|^|az|||aabn^^^^^^^^^^^|^aaa^^^^^^
+0247  L $$a0000000130423061$$2isni
+040   L $$aFI-NLD$$bfin$$erda
+043   L $$cFI
+1001  L $$aYyyyyxxxx, Yyyyyx$$0(FIN11)000202432
+370   L $$cSuomi
+372   L $$amusiikki$$2yso/fin$$0http://www.yso.fi/onto/yso/p1808
+374   L $$amuusikko$$2mts$$0http://urn.fi/URN:NBN:fi:au:mts:m2356
+374   L $$asäveltäjä$$2mts$$0http://urn.fi/URN:NBN:fi:au:mts:m2589
+374   L $$asanoittaja$$2mts$$0http://urn.fi/URN:NBN:fi:au:mts:m2933
+377   L $$afin
+670   L $$aDiscogs, katsottu 19.8.2019$$uhttps://www.discogs.com/artist/2072720
+680   L $$iTäydellinen nimi: Yyyyyx Yyyyy Yyyyyxxxx
+SID   L $$c20991$$bvioau
+UPD   L $$aY

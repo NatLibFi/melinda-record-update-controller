@@ -1,0 +1,585 @@
+[
+  {
+    "leader": "^^^^^ cz ^^ a2200181n ^^ 4500",
+    "fields": [
+      {
+        "tag": "001",
+        "value": "000000001"
+      },
+      {
+        "tag": "005",
+        "value": "20200607130447.0"
+      },
+      {
+        "tag": "008",
+        "value": "040107 | n | az ||| aab |^^^^^^^^^^^|^ aaa ^^^^^^"
+      },
+      {
+        "tag": "024",
+        "ind1": "7",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "0000000387785789"
+          },
+          {
+            "code": "2",
+            "value": "isni"
+          }
+        ]
+      },
+      {
+        "tag": "035",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "(FI - ASTERI - N)000000001"
+          }
+        ]
+      },
+      {
+        "tag": "040",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "FI - NL"
+          },
+          {
+            "code": "b",
+            "value": "fin"
+          }
+        ]
+      },
+      {
+        "tag": "046",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "f",
+            "value": "19xx"
+          }
+        ]
+      },
+      {
+        "tag": "100",
+        "ind1": "1",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "Xxxx, Xxxxx"
+          },
+          {
+            "code": "q",
+            "value": "(Xxxxx Xxxxxx)"
+          },
+          {
+            "code": "d",
+            "value": "19xx - "
+          },
+          {
+            "code": "0",
+            "value": "(FIN11)000000001"
+          }
+        ]
+      },
+      {
+        "tag": "372",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "historia"
+          },
+          {
+            "code": "2",
+            "value": "yso/fin"
+          },
+          {
+            "code": "0",
+            "value": "http: //www.yso.fi/onto/yso/p1780"
+          }
+        ]
+      },
+      {
+        "tag": "373",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "Oulun yliopisto"
+          }
+        ]
+      },
+      {
+        "tag": "374",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "yliopiston lehtori"
+          },
+          {
+            "code": "2",
+            "value": "mts"
+          },
+          {
+            "code": "0",
+            "value": "http: //urn.fi/URN:NBN:fi:au:mts:m4013"
+          }
+        ]
+      },
+      {
+        "tag": "375",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "mies"
+          }
+        ]
+      },
+      {
+        "tag": "377",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "fin"
+          },
+          {
+            "code": "a",
+            "value": "eng"
+          }
+        ]
+      },
+      {
+        "tag": "378",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "q",
+            "value": "Xxxxx Xxxxxx"
+          }
+        ]
+      },
+      {
+        "tag": "670",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "Historian selkosilla, 2012"
+          }
+        ]
+      },
+      {
+        "tag": "670",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "Pohjoinen alma mater, 2003"
+          }
+        ]
+      },
+      {
+        "tag": "670",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "Suomen valtiokalenteri 2012"
+          }
+        ]
+      },
+      {
+        "tag": "678",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "FT 2003"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "leader": "^^^^^cz^^a2200241n^^4500",
+    "fields": [
+      {
+        "tag": "001",
+        "value": "000000002"
+      },
+      {
+        "tag": "005",
+        "value": "20200607211932.0"
+      },
+      {
+        "tag": "008",
+        "value": "130802^n|az|||aabn^^^^^^^^^^^|^aaa^^^^^^"
+      },
+      {
+        "tag": "024",
+        "ind1": "7",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "0000000484334031"
+          },
+          {
+            "code": "2",
+            "value": "isni"
+          }
+        ]
+      },
+      {
+        "tag": "040",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "FI-NLD"
+          },
+          {
+            "code": "b",
+            "value": "fin"
+          },
+          {
+            "code": "e",
+            "value": "rda"
+          }
+        ]
+      },
+      {
+        "tag": "043",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "c",
+            "value": "FI"
+          }
+        ]
+      },
+      {
+        "tag": "046",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "f",
+            "value": "19xx"
+          }
+        ]
+      },
+      {
+        "tag": "100",
+        "ind1": "1",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "Xxxx, Xxxxxx,"
+          },
+          {
+            "code": "d",
+            "value": "19xx-"
+          },
+          {
+            "code": "0",
+            "value": "(FIN11)000000002"
+          }
+        ]
+      },
+      {
+        "tag": "370",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "c",
+            "value": "Suomi"
+          }
+        ]
+      },
+      {
+        "tag": "372",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "rock"
+          },
+          {
+            "code": "2",
+            "value": "yso/fin"
+          },
+          {
+            "code": "0",
+            "value": "http: //www.yso.fi/onto/yso/p1882"
+          }
+        ]
+      },
+      {
+        "tag": "372",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "popmusiikki"
+          },
+          {
+            "code": "2",
+            "value": "yso/fin"
+          },
+          {
+            "code": "0",
+            "value": "http: //www.yso.fi/onto/yso/p2969"
+          }
+        ]
+      },
+      {
+        "tag": "374",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "muusikko"
+          },
+          {
+            "code": "2",
+            "value": "mts"
+          },
+          {
+            "code": "0",
+            "value": "http: //urn.fi/URN:NBN:fi:au:mts:m2356"
+          }
+        ]
+      },
+      {
+        "tag": "374",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "kitaristi"
+          },
+          {
+            "code": "2",
+            "value": "mts"
+          },
+          {
+            "code": "0",
+            "value": "http: //urn.fi/URN:NBN:fi:au:mts:m3080"
+          }
+        ]
+      },
+      {
+        "tag": "374",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "laulaja"
+          },
+          {
+            "code": "2",
+            "value": "mts"
+          },
+          {
+            "code": "0",
+            "value": "http: //urn.fi/URN:NBN:fi:au:mts:m2355"
+          }
+        ]
+      },
+      {
+        "tag": "374",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "säveltäjä"
+          },
+          {
+            "code": "2",
+            "value": "mts"
+          },
+          {
+            "code": "0",
+            "value": "http: //urn.fi/URN:NBN:fi:au:mts:m2589"
+          }
+        ]
+      },
+      {
+        "tag": "374",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "sanoittaja"
+          },
+          {
+            "code": "2",
+            "value": "mts"
+          },
+          {
+            "code": "0",
+            "value": "http: //urn.fi/URN:NBN:fi:au:mts:m2933"
+          }
+        ]
+      },
+      {
+        "tag": "377",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "fin"
+          },
+          {
+            "code": "a",
+            "value": "eng"
+          }
+        ]
+      },
+      {
+        "tag": "378",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "q",
+            "value": "Xxxxxx Xxxxxxx"
+          }
+        ]
+      },
+      {
+        "tag": "500",
+        "ind1": "0",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "w",
+            "value": "r"
+          },
+          {
+            "code": "i",
+            "value": "Toinen identiteetti:"
+          },
+          {
+            "code": "a",
+            "value": "Xxyx,"
+          },
+          {
+            "code": "d",
+            "value": "19xx-"
+          },
+          {
+            "code": "0",
+            "value": "(FIN11)00019xx52"
+          }
+        ]
+      },
+      {
+        "tag": "500",
+        "ind1": "1",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "w",
+            "value": "r"
+          },
+          {
+            "code": "i",
+            "value": "Toinen identiteetti:"
+          },
+          {
+            "code": "a",
+            "value": "Xyxx, Xxxy,"
+          },
+          {
+            "code": "d",
+            "value": "19xx-"
+          },
+          {
+            "code": "0",
+            "value": "(FIN11)00019xx53"
+          }
+        ]
+      },
+      {
+        "tag": "670",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "Wikipedia"
+          },
+          {
+            "code": "b",
+            "value": "(syntymävuosi)"
+          },
+          {
+            "code": "u",
+            "value": "https: //fi.wikipedia.org/wiki/Xxxx_(sukunimi)"
+          }
+        ]
+      },
+      {
+        "tag": "670",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "a",
+            "value": "Suomen äänitearkiston tietokanta vuosilta 1901 - 1999"
+          },
+          {
+            "code": "b",
+            "value": "(toinen etunimi)"
+          }
+        ]
+      },
+      {
+        "tag": "680",
+        "ind1": " ",
+        "ind2": " ",
+        "subfields": [
+          {
+            "code": "i",
+            "value": "Täydellinen nimi: Xxxxxx Xxxxxxx Xxxx"
+          }
+        ]
+      }
+    ]
+  }
+]
