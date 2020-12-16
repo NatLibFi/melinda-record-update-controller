@@ -1,6 +1,5 @@
 /* eslint-disable no-warning-comments */
 import {createLogger} from '@natlibfi/melinda-backend-commons';
-import {promisify} from 'util';
 import {jobLoaderFactory} from './interfaces/jobLoader';
 import {readEpicConfig} from './interfaces/epicConfigReader';
 import {mongoFactory, createEpicMongoOperator, EPIC_JOB_STATES} from '@natlibfi/melinda-record-link-migration-commons';
@@ -8,7 +7,6 @@ import {checkJobStatus} from './interfaces/checkJobStatus';
 import validateNextJob from './interfaces/validateJob';
 
 export default async function ({mongoUrl, epicConfigFile, maxJobsInProcess}) {
-  const setTimeoutPromise = promisify(setTimeout);
   const logger = createLogger();
   const mongoOperator = await mongoFactory(mongoUrl);
   const epicMongoOperator = await createEpicMongoOperator(mongoUrl);

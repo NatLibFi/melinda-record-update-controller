@@ -43,15 +43,15 @@ steps:
     commands:
       - njsscan dist
 
-  #- name: docker
-  #  image: plugins/docker
-  #  settings:
-  #    repo: quay.io/natlibfi/melinda-record-update-controller
-  #    registry: quay.io
-  #    username:
-  #      from_secret: docker_username
-  #    password:
-  #      from_secret: docker_password
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: quay.io/natlibfi/melinda-record-update-controller
+      registry: quay.io
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
 ---
 kind: pipeline
 type: docker
