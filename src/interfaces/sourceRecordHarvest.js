@@ -2,7 +2,7 @@ import {createLogger} from '@natlibfi/melinda-backend-commons';
 import createOaiPmhClient from '@natlibfi/oai-pmh-client';
 import createSruClient from '@natlibfi/sru-client';
 import {MARCXML} from '@natlibfi/marc-record-serializers';
-import {createValidationFactory, logError} from '@natlibfi/melinda-record-update-commons';
+import {createValidationOperator, logError} from '@natlibfi/melinda-record-update-commons';
 import {MarcRecord} from '@natlibfi/marc-record';
 import fs from 'fs';
 import path from 'path';
@@ -23,7 +23,7 @@ export default function () {
     const file = fs.readFileSync(filepath);
     const jsonFile = JSON.parse(file.toString());
     const records = jsonFile.map(record => new MarcRecord(record));
-    const validators = await Promise.all(sourceRecordValidationFilters.map(validationFilter => createValidationFactory(validationFilter)));
+    const validators = await Promise.all(sourceRecordValidationFilters.map(validationFilter => createValidationOperator(validationFilter)));
     const validSourcerecords = await filterValidRecords(records, validators);
     logger.log('info', `Got ${validSourcerecords.length} valid source records file`);
 
@@ -69,7 +69,7 @@ export default function () {
     const {records, resumptionToken} = await getOaiPMhRecords(sourceRecordHarvestConfig.resumptionToken);
 
     // Validate auth records
-    const validators = await Promise.all(sourceRecordValidationFilters.map(validationFilter => createValidationFactory(validationFilter)));
+    const validators = await Promise.all(sourceRecordValidationFilters.map(validationFilter => createValidationOperator(validationFilter)));
     const validSourcerecords = await filterValidRecords(records, validators);
 
     // Return valid auth records

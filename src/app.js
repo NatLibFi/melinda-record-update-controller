@@ -2,13 +2,13 @@
 import {createLogger} from '@natlibfi/melinda-backend-commons';
 import {jobLoaderFactory} from './interfaces/jobLoader';
 import {readEpicConfig} from './interfaces/epicConfigReader';
-import {mongoFactory, createEpicMongoOperator, EPIC_JOB_STATES} from '@natlibfi/melinda-record-update-commons';
+import {createMongoOperator, createEpicMongoOperator, EPIC_JOB_STATES} from '@natlibfi/melinda-record-update-commons';
 import {checkJobStatus} from './interfaces/checkJobStatus';
 import validateNextJob from './interfaces/validateJob';
 
 export default async function ({mongoUrl, epicConfigFile, maxJobsInProcess}) {
   const logger = createLogger();
-  const mongoOperator = await mongoFactory(mongoUrl);
+  const mongoOperator = await createMongoOperator(mongoUrl);
   const epicMongoOperator = await createEpicMongoOperator(mongoUrl);
   const jobLoader = await jobLoaderFactory(mongoOperator);
 
