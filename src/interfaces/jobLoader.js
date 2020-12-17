@@ -3,7 +3,7 @@ import {promisify} from 'util';
 import {v4 as uuid} from 'uuid';
 import {Error as LoaderError} from '@natlibfi/melinda-commons';
 import {createLogger} from '@natlibfi/melinda-backend-commons';
-import {COMMON_JOB_STATES} from '@natlibfi/melinda-record-link-migration-commons';
+import {COMMON_JOB_STATES} from '@natlibfi/melinda-record-update-commons';
 import sourceRecordHarvesterFactory from './sourceRecordHarvest';
 
 export async function jobLoaderFactory(mongoOperator) {

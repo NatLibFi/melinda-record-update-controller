@@ -1,4 +1,4 @@
-import {COMMON_JOB_STATES} from '@natlibfi/melinda-record-link-migration-commons/';
+import {COMMON_JOB_STATES} from '@natlibfi/melinda-record-update-commons';
 import {createLogger} from '@natlibfi/melinda-backend-commons';
 
 export async function checkJobStatus(mongoOperator, jobs) {

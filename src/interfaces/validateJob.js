@@ -1,5 +1,4 @@
-import {COMMON_JOB_STATES} from '@natlibfi/melinda-record-link-migration-commons';
-import {HARVESTER_JOB_STATES} from '@natlibfi/melinda-record-link-migration-commons/dist/constants';
+import {COMMON_JOB_STATES, HARVESTER_JOB_STATES} from '@natlibfi/melinda-record-update-commons';
 import {format} from 'util';
 import {getSruRecords} from './utils';
 import {MarcRecord} from '@natlibfi/marc-record';

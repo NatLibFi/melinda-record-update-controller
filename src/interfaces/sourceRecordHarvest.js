@@ -2,7 +2,7 @@ import {createLogger} from '@natlibfi/melinda-backend-commons';
 import createOaiPmhClient from '@natlibfi/oai-pmh-client';
 import createSruClient from '@natlibfi/sru-client';
 import {MARCXML} from '@natlibfi/marc-record-serializers';
-import {createValidationFactory, logError} from '@natlibfi/melinda-record-link-migration-commons';
+import {createValidationFactory, logError} from '@natlibfi/melinda-record-update-commons';
 import {MarcRecord} from '@natlibfi/marc-record';
 import fs from 'fs';
 import path from 'path';

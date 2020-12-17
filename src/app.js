@@ -2,7 +2,7 @@
 import {createLogger} from '@natlibfi/melinda-backend-commons';
 import {jobLoaderFactory} from './interfaces/jobLoader';
 import {readEpicConfig} from './interfaces/epicConfigReader';
-import {mongoFactory, createEpicMongoOperator, EPIC_JOB_STATES} from '@natlibfi/melinda-record-link-migration-commons';
+import {mongoFactory, createEpicMongoOperator, EPIC_JOB_STATES} from '@natlibfi/melinda-record-update-commons';
 import {checkJobStatus} from './interfaces/checkJobStatus';
 import validateNextJob from './interfaces/validateJob';
 

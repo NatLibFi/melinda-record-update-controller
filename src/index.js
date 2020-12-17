@@ -1,5 +1,5 @@
 import {handleInterrupt} from '@natlibfi/melinda-backend-commons';
-import {logError} from '@natlibfi/melinda-record-link-migration-commons';
+import {logError} from '@natlibfi/melinda-record-update-commons';
 import * as config from './config';
 import startApp from './app';
 
