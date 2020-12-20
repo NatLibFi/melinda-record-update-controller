@@ -25,6 +25,7 @@ export default async function ({mongoUrl, epicConfigFile, maxJobsInProcess}) {
     // if epic-item null -> readEpicConfig
     if (epicJob === null) { // eslint-disable-line functional/no-conditional-statement
       await createEpic();
+      await setTimeoutPromise(5000);
       return loop();
     }
 
