@@ -39,7 +39,7 @@ export default async function ({mongoUrl, epicConfigFile, maxJobsInProcess}) {
       const {jobsInProcess} = await checkJobStatus(mongoOperator, epicJob.jobs, epicJob.jobsDone);
 
       if (jobsInProcess < maxJobsInProcess) { // eslint-disable-line functional/no-conditional-statement
-        logger.log('info', 'Validating new job')
+        logger.log('info', 'Validating new job');
         await validateNextJob(mongoOperator, epicJob.sourceHarvesting.sourceRecordValidationConfig);
         return loop();
       }
