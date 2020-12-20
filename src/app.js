@@ -1,4 +1,5 @@
 /* eslint-disable no-warning-comments */
+import {promisify} from 'util';
 import {createLogger} from '@natlibfi/melinda-backend-commons';
 import {jobLoaderFactory} from './interfaces/jobLoader';
 import {readEpicConfig} from './interfaces/epicConfigReader';
@@ -7,6 +8,7 @@ import {checkJobStatus} from './interfaces/checkJobStatus';
 import validateNextJob from './interfaces/validateJob';
 
 export default async function ({mongoUrl, epicConfigFile, maxJobsInProcess}) {
+  const setTimeoutPromise = promisify(setTimeout);
   const logger = createLogger();
   const mongoOperator = await createMongoOperator(mongoUrl);
   const epicMongoOperator = await createEpicMongoOperator(mongoUrl);
@@ -44,7 +46,8 @@ export default async function ({mongoUrl, epicConfigFile, maxJobsInProcess}) {
 
     // loop
     // logger.log('debug', JSON.stringify(epicConfig, undefined, 2));
-    throw Error('Nothing to do! Shutting down!');
+    await setTimeoutPromise(10000);
+    return loop();
   }
 
   function createEpic() {
@@ -54,6 +57,7 @@ export default async function ({mongoUrl, epicConfigFile, maxJobsInProcess}) {
   }
 
   async function stateLoading(epicJob) {
+
     const {sourceHarvesting, linkDataHarvesting} = epicJob;
     // logger.debug(JSON.stringify(sourceHarvesting));
     // logger.debug(JSON.stringify(linkDataHarvesting));
@@ -79,7 +83,7 @@ export default async function ({mongoUrl, epicConfigFile, maxJobsInProcess}) {
       return loadSru();
     }
 
-    throw Error('shutdown');
+    throw Error('Shutdown');
 
     async function loadOaipmh() {
       // {resumptiontoken, ids} -> update resumption + ids
