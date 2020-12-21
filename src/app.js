@@ -15,6 +15,7 @@ export default async function ({mongoUrl, epicConfigFile, maxJobsInProcess}) {
   const jobLoader = await jobLoaderFactory(mongoOperator);
 
   logger.log('info', `Starting job controller - config file: ${epicConfigFile}`);
+  logger.log('info', `Connected to mongo: ${mongoUrl}`);
   await loop();
 
   async function loop() {
